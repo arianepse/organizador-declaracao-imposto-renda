@@ -62,10 +62,68 @@ Seleciona as três últimas células (D17:D19), Menu Dados -> Validação de Dad
 
 Agora vamos inserir um botão para ir à próxima página: Menu Inserir -> Formas -> Retângulo. Escreva "PRÓXIMO ->", formate como queira, botão direito Não mover ou dimensionar com células. Botão direito, hiperlink, neste documento, C1 e Informes.
 
-### Formatações personalizadas
+### Etapa 2.1 - Formatações personalizadas
 
+Nos campos com CPF, CEP, Telefone e Celular, observa-se que possuem um padrão característico, porém nem sempre formatações específicas essas estão disponíveis. O Excel nos permite personalizar esse tipo de formatação.
 
+Clica na célula do referente ao CPF -> Página Inicial -> Número -> Mais formatos de número -> Personalizado
 
+> Para entradas numéricas é representado por 0 (zero) e entradas de texto são colocadas entre aspas duplas ("").
 
+Em tipo, para o CPF vamos inserir: 000"."000"."000"-"00 e OK.
 
+Quando digitar somente os números do CPF ele já aparecerá no padrão formatado.
 
+De maneira análoga, faça o mesmo para os demais campos necessitam de personalização.
+
+![Formato de CPF](/images/cpf-personalizado.jpg)
+
+E agora temos a aba Titular pronta.
+
+![Tela Titular](/images/titular.jpg)
+
+### Etapa 3 - Tela de Informes
+
+Repare que na primeira aba começamos na célula C3, na segunda aba também manteremos essa célula.
+
+Copia o cabeçalho e deixa a largura das colunas C e D iguais da plan Titular, idem para altura das linhas. Renomeie para "2. INFORMES DE RENDIMENTOS BANCÁRIOS". E na linha debaixo para "Preencha com seus dados atuais de cada banco".
+
+Copia a primeira linha da tabela para pegarmos a formatação. Preencha com BANCO, VALOR ATUAL e ANEXO, em cada linha. Valor formata como moeda e em bancos vamos criar uma listagem de todos os bancos na aba TABELAS para selecioná-los .
+
+Menu Dados -> Validação de Dados -> Lista: seleciona a lista dos bancos. Opcionalmente, pode-se adicionar uma mensagem de entrada que aparece quando passa o mouse por cima da célula, como também criar um alerta de erro.
+
+Você pode, na linha de cima, deixar como "1º Banco" em tamanho menor e fonte cinza clara.
+
+Copia a tabela e saltando uma linha crie mais bancos.
+
+Agora vamos criar um totalizador dos bancos. Adicione algumas linhas acima e escreva "TOTAL" célula debaixo =SOMA e selecione o Valor Atual de cada banco. Formate.
+
+E para finalizar esta tela copiamos o botão de *Próximo* da aba anterior, duplicamos e colocaremos "<- ANTERIOR" que volta ao TITULAR e "PRÓXIMO ->" que vai para notas.
+
+Oculte a aba dos bancos com botão direito do mouse.
+
+![Tela de Informes](/images/informes.jpg)
+
+### Etapa 4 - Tela de Notas
+
+Vamos copiar o estilo, largura da coluna e iniciar na célula C3 como nas abas anteriores. Cabeçalho desta: "3. NOTAS BANCÁRIAS OU EXTRATO DE HOLERITES" e "São todos os valores de entrada mês a mês de receita"
+
+Preenchimento rosa da C7:E7, "ENTRADAS", fonte Segoe Ui Light e cor branca, mesclar e centralizar.
+
+Na linha debaixo, digite DATA, CATEGORIA, VALOR. Redimensione a largura das colunas de forma equilibrada. Formate. Menu Inserir -> Inserir Tabela. No pontinho azul no final da tabela arraste para mais linhas.
+
+Na primeira linha abaixo de Categoria, selecione, Menu Dados -> Validação de Dados -> Lista: HOLERITE; CNPJ; FREELANCE. Copie e cola nas demais linhas da tabela. Centraliza tudo, fonte Segoe Ui.
+
+Copia botão da aba anterior, deixe levemente menor e em cima. Crie o link para Informes.
+
+![Tela de Notas](/images/notas.jpg)
+
+### Etapa 5 - Toques Finais
+
+1. onde tem as abas, clique nos três pontinhos e arraste à esquerda;
+2. no Menu Exibir, desmarcar Linhas de grade, Barra de fórmulas, e Títulos;
+3. pode deixar em modo tela cheia (caso queira);
+4. na aba Titular, parte amarela onde pode mexer, seleciona e com botão direito Formatar célula -> Proteção -> desmarcar a opção *bloqueada*. Botão direito em cima da aba e Proteger planilha -> marca Selecionar células desbloqueadas. Dessa forma, pode digitar apenas onde está liberado o preenchimento dos dados e nos hiperlinks.
+5. Faça o passo anterior para as demais abas.
+
+![Tela Final](/images/toquesfinais.jpg)
