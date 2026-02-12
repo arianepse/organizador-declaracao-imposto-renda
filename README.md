@@ -46,6 +46,23 @@ Agora temos um Menu navegável!
 
 ![Menu](/images/menu.jpg)
 
+### Etapa 2 - Construção da Tela do Titular
+
+Na coluna C vamos colocar todos os campos que pedem para declarar: NOME, CPF, NASCIMENTO, TÍTULO DE ELEITOR, CÔNJUGE, RUA, RUA ABREVIADA, CEP, TELEFONE, CELULAR, E-MAIL, HOUVE ALTERAÇÕES DA ENTREGA ANTERIOR, DEPENDENTE CÔNJUGE, RESIDENTE DO EXTERIOR. 
+
+Começando da C7 fonte Segoe Ui Light, na col D estilos de célula -> neutra. Seleciona colunas C e D e duplo clique para autofit. Bordas horizontais cinza claro. Col C alinhada à direita.
+
+Seleciona C3:E3, Estilos de célula -> Título I. Mais bordas, tom de rosa. Escreva "1. DADOS DO TITULAR" e tom roxo escuro.
+
+Seleciona C4:E4, tom rosa mais claro, aumentar altura, itálico, mesclar, alinhar à esquerda, recuo 3x. Escreva "Preencha os dados da pessoa física abaixo".
+
+Seleciona a tabela e mova uma linha para cima.
+
+Seleciona as três últimas células (D17:D19), Menu Dados -> Validação de Dados -> Permitir -> Lista: SIM;NÃO.
+
+Agora vamos inserir um botão para ir à próxima página: Menu Inserir -> Formas -> Retângulo. Escreva "PRÓXIMO ->", formate como queira, botão direito Não mover ou dimensionar com células. Botão direito, hiperlink, neste documento, C1 e Informes.
+
+### Formatações personalizadas
 
 
 
